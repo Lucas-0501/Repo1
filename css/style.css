@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: black;
+  background-image: url(../img/backgrounds/fondo.jpg);
+  background-repeat: no-repeat;
+}
+
+nav {
+  background-color: rgb(235, 201, 7);
+  width: 100%;
+
+  /* position: sticky;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-inline: 15px;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+
+nav ul li a img {
+  height: 25px;
+  width: 25px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav img {
+  margin-right: 10px;
+  margin-left: 15px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 0;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: rgb(235, 201, 7);
+  padding: 8px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer ul li {
+  list-style: none;
+  display: inline;
+}
+
+footer ul li a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 18px;
+  margin-inline: 20px;
+  font-weight: bold;
+}
+
+footer ul li a img {
+  height: 25px;
+  width: 25px;
+}
+
+/* .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 50px;
+} */
+
+.card {
+  width: 400px;
+  /* height: 400px; */
+  background-color: rgb(235, 201, 7);
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  margin-inline: 90px;
+  padding-top: 0px;
+  padding-inline: 0px;
+  text-align: center;
+}
+
+.imgCard {
+  width: 400px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.desc {
+  color: white;
+  text-align: center;
+  margin: 20px;
+}
+
+.cardmenu {
+  padding: 20px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cardmenu figure {
+  width: 22%;
+  background-color: rgb(235, 201, 7);
+  border-radius: 5px;
+  padding: 0px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  margin-inline: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cardmenu figure figcaption {
+  color: rgb(0, 0, 0);
+  font-size: 1.8em;
+  margin: 5px;
+}
+.cardmenu figure p {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin: 5px;
+}
+
+button {
+  color: rgb(235, 201, 7);
+  background-color: black;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  margin-top: 10px;
+  border-style: hidden;
+  border: none;
+}
+button:hover {
+  cursor: pointer;
+}
+.cant {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.irCarrito {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  background-color: rgb(235, 201, 7);
+  padding: 15px;
+  margin-bottom: 25px;
+  width: 100px;
+  margin-inline: 46%;
+  border-radius: 10px;
+}
+
+.sucurHeader {
+  color: rgb(235, 201, 7);
+  text-align: center;
+  margin: 30px;
+  font-weight: bold;
+}
+
+.mapa {
+  margin-right: 80px;
+}
+
+.sucurList {
+  color: white;
+  margin: 30px;
+  font-weight: bold;
+}
+
+.sucurList a {
+  color: white;
+}
+
+.container div ul {
+  list-style-image: url(../img/gps1.png);
+}
+
+.fotosLrow {
+  /* lo uso para que las fotos queden una al lado de la otra */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+  margin-bottom: 35px;
+}
+
+.fotoLoc {
+  height: 400px;
+  width: 550px;
+  border-radius: 5px;
+  border: 10px;
+  border-color: rgb(235, 201, 7);
+}
+
+.promos {
+  /* hago que las 2 promos esten en la misma linea */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.cardPromo {
+  width: 600px;
+  height: 300px;
+  background-color: rgb(235, 201, 7);
+  border-radius: 5px;
+  margin: 10px 10px;
+  display: flex;
+  /* con esto hago que el texto vaya para la derecha de la imagen en vez de ir abajo */
+  color: rgb(0, 0, 0);
+}
+
+.imgCard {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.cardPromoContent {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contactosides {
+  /* hago que las 2 partes esten en la misma linea */
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.redes {
+  color: white;
+  width: 50%;
+  padding: 50px;
+  text-decoration: none;
+}
+.redes ul li {
+  margin: 50px 100px;
+  list-style: none;
+}
+.redes ul li a {
+  color: white;
+  text-decoration: none;
+  padding-top: 50px;
+  font-size: large;
+  margin-left: 25px;
+  font-size: 1.6em;
+}
+.redes ul li svg {
+  height: 40px;
+  width: 40px;
+}
+aside {
+  font-weight: bold;
+  float: right;
+  background-color: rgb(235, 201, 7);
+  width: 100%;
+  margin-right: 50px;
+}
+
+aside form input {
+  margin: 20px;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.form {
+  margin: 0px;
+  padding: 20px;
+}
+.formtextarea label {
+  display: block;
+}
+.formtextarea textarea {
+  padding: 10px;
+  border-radius: 5px;
+}
+.formitem input {
+  border-radius: 5px;
+}
+
+/*estilo de letra de Links en las cards de bootstrap del index  */
+.LinksCard{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  /* font-size: 18px; */
+  /* margin-inline: 20px; */
+  
+  font-weight: bold;
+
+}
