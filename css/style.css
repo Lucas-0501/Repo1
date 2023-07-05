@@ -12,7 +12,7 @@ body {
 
 nav {
   background-color: rgb(235, 201, 7);
-  width: 100%;
+  /* width: 100%; */
 
   /* position: sticky;
   left: 0;
@@ -342,3 +342,7 @@ form {
   font-weight: bold;
 
 }
+/* breakpoint para pc
+@media (width > 768px){
+
+} */
