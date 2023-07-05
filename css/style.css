@@ -31,6 +31,7 @@ nav ul li a {
   text-decoration: none;
   color: rgb(0, 0, 0);
   font-size: 20px;
+  /* text-align: end; */
 }
 
 nav ul li a img {
@@ -331,6 +332,8 @@ aside {
 
  /* breakpoint 1 */
  @media (width < 576px){
+  
+  /* Pagina Sucursales */
   .Sucursales{
     display: flex;
     flex-direction: column;
@@ -352,6 +355,9 @@ aside {
   row-gap: 50px;
   margin-bottom: 35px;
   }
+
+
+
   /* footer */
   footer{
     flex-direction: column;
@@ -360,6 +366,9 @@ aside {
     margin-inline: 5px;
     margin-bottom: 5px;
   }
+
+
+  /* Index cards */
   /* ajustar la card para que se vea bien en celular */
   .card {
     width: auto;
@@ -379,6 +388,20 @@ aside {
     width: auto;
     height: auto;
     margin-bottom: 10px;
+  }
+
+
+/* para que promociones.html sea responsive en vez de mostrar las promos en row las muestro en una sola columna */
+  .promos {
+    margin-top: 10px;
+  }
+  .cardPromo {
+    width: 100%;
+    height: 100%;
+    margin: 20px 10px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
   }
  
 }
