@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hamburgueseria</title>
     <!-- link para bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- link a mi css hoja maestra-->
     <link rel="stylesheet" href="../css/style.css">
 
@@ -16,52 +17,52 @@
 </head>
 
 <body>
-   <!-- nav con bootstrap -->
-   <nav class="navbar navbar-expand-lg sticky-top">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html">
-            <!-- logo de la nav -->
-            <img src="../img/favicon.png" alt="" class="d-inline-block align-text-center">
-            Hamburguesas
-        </a>
-        <!-- boton hamburguesa -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <!-- elementos de la nav -->
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/menu.html">Menu</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/sucursales.html">Sucursales</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/promociones.html">Promociones</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <img src="../img/iconos/signin.png" alt="sign in">
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">
-                        <img src="../img/iconos/cart.png" alt="">
-                    </a>
-                </li>
-            </ul>
+    <!-- nav con bootstrap -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <!-- logo de la nav -->
+                <img src="../img/favicon.png" alt="" class="d-inline-block align-text-center">
+                Hamburguesas
+            </a>
+            <!-- boton hamburguesa -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <!-- elementos de la nav -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/sucursales.html">Sucursales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/promociones.html">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="../img/iconos/signin.png" alt="sign in">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="../img/iconos/cart.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
-<!-- end nav con bootstrap -->
+    </nav>
+    <!-- end nav con bootstrap -->
     <section>
         <div class="contactosides">
             <div class="redes">
@@ -111,36 +112,77 @@
                 </div>
             </div>
             <aside>
-                <div>
-                    <h1>Si tienes alguna duda o queja escribinos aca</h1>
-                    <form>
-                        <div class="form">
-                            <div class="formitem">
-                                <label for="nombre">Nombre:</label>
-                                <input type="text" id="nombre" name="nombre">
-                            </div>
-                            <div class="formitem">
-                                <label for="email">Correo electrónico:</label>
-                                <input type="email" id="email" name="email">
-                            </div>
-                            <div class="fformitem">
-                                <label for="telefono">Teléfono:</label>
-                                <input type="tel" id="telefono" name="telefono">
-                            </div>
-                            <button type="submit">Enviar</button>
+                <form class="row g-3 needs-validation formu" novalidate>
+                    <!-- form nombre -->
+                    <div class="col-md-3">
+                      <label for="validationCustom01" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="validationCustom01" value="" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <!-- form apellido bs -->
+                    <div class="col-md-3">
+                      <label for="validationCustom02" class="form-label">Apellido</label>
+                      <input type="text" class="form-control" id="validationCustom02" value="" required>
+                      <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                    </div>
+                    <!-- form mail bs -->
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
                         </div>
-                        <div class="formtextarea">
-                            <label for="mensaje">Deje su mensaje:</label>
-                            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+                    </div>
+                    <!-- telefono bs -->
+                    <div class="col-md-4">
+                      <label for="validationCustom03" class="form-label">Numero de Telefono</label>
+                      <input type="text" class="form-control" id="validationCustom03" required>
+                      <div class="invalid-feedback">
+                        Please provide a valid city.
+                      </div>
+                    </div>
+                    <!-- dropdown bs -->
+                    <div class="col-md-6">
+                      <label for="validationCustom04" class="form-label">Motivo de contacto</label>
+                      <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option>...</option>
+                      </select>
+                      <div class="invalid-feedback">
+                        Please select a valid state.
+                      </div>
+                    </div>
+                    <!-- caja de comentario bs -->
+                    <div class="form-floating col-md-6">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Deja un comentario aqui</label>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                          Aceptar terminos de condiciones
+                        </label>
+                        <div class="invalid-feedback">
+                          You must agree before submitting.
                         </div>
-                    </form>
-                </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <button type="submit">Enviar</button>
+                    </div>
+                  </form>
+
+
             </aside>
         </div>
     </section>
-
-
+    <!-- inicia footer -->
     <footer>
+        <!-- links a las otras pages -->
         <ul>
             <li>
                 <a href="../pages/menu.html">Menu</a>
@@ -155,37 +197,31 @@
                 <a href="../pages/contacto.html">Contacto</a>
             </li>
         </ul>
-        <div class="redesfooter">
-            <p>Nuestras redes</p>
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com">
-                        <img src="../img/iconos/fb.png" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.twitter.com">
-                        <img src="../img/iconos/tw.png" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com">
-                        <img src="../img/iconos/ig.png" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://api.whatsapp.com/send?phone=15255252552">
-                        <img src="../img/iconos/wa.png" alt="">
-                    </a>
-                </li>
-            </ul>
+        <!-- redes -->
+        <div>
+            <p>Nuestras Redes</p>
+            <a href="https://www.facebook.com">
+                <img class="imgFooter" src="../img/iconos/fb.png" alt="">
+            </a>
+            <a href="https://www.twitter.com">
+                <img class="imgFooter" src="../img/iconos/tw.png" alt="">
+            </a>
+            <a href="https://www.instagram.com">
+                <img class="imgFooter" src="../img/iconos/ig.png" alt="">
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=15255252552">
+                <img class="imgFooter" src="../img/iconos/wa.png" alt="">
+            </a>
         </div>
+        <!-- Logo -->
         <div>
             <img src="../img/favicon.png" alt="">
         </div>
     </footer>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

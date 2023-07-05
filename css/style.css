@@ -68,7 +68,7 @@ header img {
   height: auto;
 }
 
-footer {
+/* footer {
   background-color: rgb(235, 201, 7);
   padding: 8px 30px;
   display: flex;
@@ -95,12 +95,62 @@ footer ul li a img {
   width: 25px;
 }
 
-/* .container {
+.redesfooter{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+
+} */
+
+footer{
+  background-color: rgb(235, 201, 7);
+  padding: 10px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+  footer svg{
+      width: 30px;
+      height: 30px;
+      fill:  rgb(206, 206, 206);
+      margin-right: 10px;
+  }
+
+  footer ul{
+      list-style: none;
+  }
+
+  footer ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    margin-inline: 20px;
+    font-weight: bold;
+  }
+  
+  .imgFooter{
+    height: 25px;
+    width: 25px;
+    margin-inline: 30px;
+  }
+
+  footer a{
+      text-decoration: none;
+  }
+  footer div p {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+.Sucursales {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 50px;
-} */
+} 
 
 .card {
   width: 400px;
@@ -201,7 +251,7 @@ button:hover {
 }
 
 .mapa {
-  margin-right: 80px;
+  margin-right: 0px;
 }
 
 .sucurList {
@@ -214,7 +264,7 @@ button:hover {
   color: white;
 }
 
-.container div ul {
+.Sucursales div ul {
   list-style-image: url(../img/gps1.png);
 }
 
@@ -307,29 +357,10 @@ aside {
   width: 100%;
   margin-right: 50px;
 }
+.formu{
+  margin-left: 20px;
+  margin-top: 10px;
 
-aside form input {
-  margin: 20px;
-}
-
-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: left;
-}
-.form {
-  margin: 0px;
-  padding: 20px;
-}
-.formtextarea label {
-  display: block;
-}
-.formtextarea textarea {
-  padding: 10px;
-  border-radius: 5px;
-}
-.formitem input {
-  border-radius: 5px;
 }
 
 /*estilo de letra de Links en las cards de bootstrap del index  */
@@ -342,7 +373,36 @@ form {
   font-weight: bold;
 
 }
-/* breakpoint para pc
-@media (width > 768px){
-
-} */
+ /* breakpoint 1 */
+ @media (width < 576px){
+  .Sucursales{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  iframe{
+  /* ajusto el mapa para que se vea bien en celular */
+  width: 100%;
+  }
+  /* modifico las fotos del grid para mostrartlas en columna en vez de mostrarlas en una fila sola */
+  .fotoLoc{
+  width: 100%;
+  height: 250px;
+  }
+  .fotosLrow {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 50px;
+  margin-bottom: 35px;
+  }
+  /* footer */
+  footer{
+    flex-direction: column;
+  }
+  .imgFooter{
+    margin-inline: 5px;
+    margin-bottom: 5px;
+  }
+ 
+}
