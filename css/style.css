@@ -404,7 +404,6 @@ aside {
     display: flex;
     flex-direction: column;
   }
-
 /* Pagina contacto */
   .contactosides {
     /* en vez de que el aside este al lado de las redes, hago que este abajo y entre en mobile */

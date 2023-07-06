@@ -30,6 +30,6 @@ Falta que sea responsive menu.html
 
 * Modificacion de las imagenes del [Index](./index.html) para que tengan las mismas resoluciones.
 
-* Ahora el form de [Contacto](./pages/contacto.html) usa bootstrap para mas prlijidad.
+* Ahora el form de [Contacto](./pages/contacto.html) usa bootstrap para mas prolijidad.
 
 * Se corrigieron problemas de ruta en algunos links e imagenes.
