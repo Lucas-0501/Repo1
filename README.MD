@@ -1,5 +1,5 @@
 # Repositorio Pagina web ----> Lucas Aguero
-lucas-0501.github.io/Repo1/
+https://lucas-0501.github.io/Repo1/pages/menu.html
 ## Paginas adaptadas a la vista mobile y la vista desktop
 
 Por ahora estas son las paginas responsive: 
