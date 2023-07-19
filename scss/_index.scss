@@ -1,0 +1,23 @@
+.card{
+    width: 400px;
+    background-color: $mainColor;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    margin-inline: 90px;
+    padding-top: 10px;
+    padding-inline: 10px;
+    text-align: center;
+}
+.LinksCard{
+    color: $black;
+    text-decoration: none;
+    font-size: $textLg;
+    font-weight: $textBold;
+}
+.desc{
+    color: $white;
+    text-align: center;
+    margin: 20px;
+    padding: 25px;
+}

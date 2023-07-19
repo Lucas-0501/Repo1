@@ -1,0 +1,40 @@
+/* animacion para que las fotos de las sucursales aparezcan de arriba a abajo */
+@keyframes fotoAnim {
+    0% {
+        opacity: 0;
+        transform: rotateX(-100deg);
+        transform-origin: top;
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateX(0deg);
+        transform-origin: top;
+    }
+}
+/* animacion para que los botones del menu se agranden un poco*/
+@keyframes botonAnim {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+/* animacion para que aparezca algo con un fade forward */
+@keyframes entrada {
+	0% {
+		opacity: 0;
+		transform: scale(0.6);
+	}
+
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}

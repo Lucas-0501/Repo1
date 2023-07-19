@@ -1,0 +1,26 @@
+@mixin text($weight,$color,$fontsize,$padding,$align){
+    font-weight: $weight;
+    color: $color;
+    font-size: $fontsize;
+    padding: $padding;
+    // condicional de align
+    @if $align == right{text-align: right}
+    @else if $align == center{text-align: center}
+    @else if $align == left {text-align: left}
+}
+
+@mixin flex($flexDirection){
+    display: flex;
+    @if $flexDirection == row{flex-direction: row;}
+    @else if $flexDirection == row-reverse{flex-direction: row-reverse;}
+    @else if $flexDirection == column{flex-direction: column;}
+    @else if $flexDirection == column-reverse{flex-direction: column-reverse;}
+}
+
+// @mixin dispositivo($breakpoint) { 
+//   @if $breakpoint == mobile {
+//     @media (width < 576px){
+//       @content;
+//     }
+//   }
+// }

@@ -1,0 +1,47 @@
+.Sucursales{
+    @include flex(row);
+    justify-content: center;
+    margin-bottom: 50px;
+
+    div{
+        ul{
+            list-style-image: url(../img/gps1.png);
+        }
+    }
+}
+.sucurHeader {
+    color: $mainColor;
+    text-align: center;
+    margin: 30px;
+    font-weight: $textBold;
+}
+.mapa {
+    margin-right: 0px;
+}
+.sucurList {
+    color: $white;
+    margin: 30px;
+    font-weight: $textBold;
+
+    a{
+        color: $white;
+    }
+}
+.fotosLrow{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    margin-bottom: 35px;
+
+    animation: fotoAnim 1s ease 0s 1 normal forwards;
+}
+.fotoLoc {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: 10px;
+}
+.h1Sucu{
+    padding: 10px;
+    margin-bottom: 20px;
+}

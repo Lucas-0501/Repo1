@@ -1,0 +1,45 @@
+// variables globales
+$mainColor:rgb(235, 201, 7);
+$black:rgb(10, 10, 10);
+$white:rgb(255, 254, 254);
+$Mas:rgb(37, 158, 7);
+$Menos:rgb(212, 6, 6);
+
+//font
+$mainFont:'Roboto',sans-serif;
+
+//font weight
+$textBold:700;
+$textWeightLight:300;
+$textWeightRegular:400;
+
+//font size
+$textSm:13px;
+$textMd:20px;
+$textLg:24px;
+$textLg2:28px;
+
+$mobile:"(width < 576px)";
+$desktop:"(width> 1024px)";
+
+
+/////////// MIXINS//////////////
+@mixin text($weight,$color,$fontsize,$padding,$align){
+    font-weight: $weight;
+    color: $color;
+    font-size: $fontsize;
+    padding: $padding;
+    // condicional de align
+    @if $align == right{text-align: right}
+    @else if $align == center{text-align: center}
+    @else if $align == left {text-align: left}
+}
+
+@mixin flex($flexDirection){
+    display: flex;
+    @if $flexDirection == row{flex-direction: row;}
+    @else if $flexDirection == row-reverse{flex-direction: row-reverse;}
+    @else if $flexDirection == column{flex-direction: column;}
+    @else if $flexDirection == column-reverse{flex-direction: column-reverse;}
+}
+

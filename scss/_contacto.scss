@@ -1,0 +1,51 @@
+.contactosides {
+    /* hago que las 2 partes esten en la misma linea */
+    @include flex(row);
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  .redes {
+    animation: entrada 1s ease 0s 1 normal forwards;
+    color: $white;
+    width: 50%;
+    padding: 40px;
+    text-decoration: none;
+
+    ul{
+        li{
+            margin: 50px 50px;
+            list-style: none;
+            text-align: center;
+
+            a{
+                color: $white;
+                text-decoration: none;
+                padding-top: 50px;
+                font-size: $textLg;
+                margin-left: 25px;  
+            }
+            svg{
+                height: 40px;
+                width: 40px;  
+            }
+        }
+    }
+  }
+aside{
+    font-weight: $textBold;
+    float: right;
+    background-color: $mainColor;
+    width: 100%;
+    margin-right: 50px;
+}
+.formu{
+    margin-left: 20px;
+    margin-top: 10px;
+  
+}
+.btnContact{
+    @extend .btnMain;
+    background-color: $white;
+    color: $black;
+}

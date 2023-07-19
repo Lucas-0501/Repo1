@@ -1,0 +1,41 @@
+*{
+    font-family: $mainFont;
+}
+
+body{
+    background-color: $black;
+    background-image: url(../img/backgrounds/fondo.jpg);
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+  
+p {
+    margin: 0;
+}
+header img {
+    width: 100%;
+    height: auto;
+}
+.btnMain{
+    color: $mainColor;
+    background-color: $black;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    margin-top: 10px;
+    border-style: hidden;
+    border: none;
+
+    &:hover {
+        cursor: pointer;
+      }
+    
+}
+

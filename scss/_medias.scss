@@ -1,0 +1,118 @@
+/* breakpoint para Celular*/
+@media #{$mobile}{
+    /* footer */
+    footer{
+        @include flex(column);
+    }
+    .imgFooter{
+        margin-inline: 5px;
+        margin-bottom: 5px;
+    }
+   
+   
+    /* Pagina Sucursales */
+    .Sucursales{
+        @include flex(column);
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    iframe{
+    /* ajusto el mapa para que se vea bien en celular */
+    width: 100%;
+    }
+    /* modifico las fotos del grid para mostrartlas en columna en vez de mostrarlas en una fila sola */
+    .fotoLoc{
+    width: 100%;
+    height: 100%;
+    }
+    .fotosLrow {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+    margin-bottom: 35px;
+    }
+
+    /* Index cards */
+    /* ajustar la card para que se vea bien en celular */
+    .card {
+        width: auto;
+        height: auto;
+        background-color: $mainColor;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 0px;
+        margin-top: 40px;
+        margin-inline: 10px;
+        /* hago que la imagen no tenga borde grande(padding 0) asi se ve mejor en celular */
+        padding-top: 0px;
+        padding-inline: 0px;
+        text-align: center;
+    }
+    /* ajustar imagen para celular, porque en pc tiene una resolucion muy alta y sino se sale de la pantalla */
+    .imgCard {
+        width: auto;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    /* para que promociones.html sea responsive en vez de mostrar las promos en row las muestro en una sola columna */
+    .promos {
+        margin-top: 10px;
+    }
+    .cardPromo {
+        width: 100%;
+        height: 100%;
+        margin: 20px 10px;
+        padding-bottom: 20px;
+        @include flex(column);
+    }
+
+    /* Pagina contacto */
+    .contactosides {
+        /* en vez de que el aside este al lado de las redes, hago que este abajo y entre en mobile */
+        @include flex(column);
+        
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+    .formu{
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-right: 40px;
+    
+    }
+    .btnform{
+        margin-bottom: 25px;
+    }
+    .redes ul li {
+        margin-inline: 20px;
+        list-style: none;
+        text-align: center;
+    }
+    /* Pagina de menu */
+    .cardmenu {
+        grid-template-columns: 1fr; 
+        grid-template-rows: repeat(6, 1fr);
+        gap: 0px 0px; 
+        grid-template-areas: 
+            "b1"
+            "b2"
+            "b3"
+            "b4"
+            "b5"
+            "b6"; 
+        justify-items: center; 
+        align-items: center;    
+        
+        figure{
+            margin-top: 20px;
+            width: 280px; 
+        }
+    }
+    .imgCard {
+        width: 280px;
+        height: 280px;
+    }
+
+}
+
