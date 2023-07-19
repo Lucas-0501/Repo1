@@ -1,10 +1,41 @@
 # Repositorio Pagina web ----> Lucas Aguero
 https://lucas-0501.github.io/Repo1/index.html
-## Paginas adaptadas a la vista mobile y la vista desktop
+## Pre-Entrega 3
+## Cambios y cosas nuevas En esta entrega
 
-Por ahora estas son las paginas responsive: 
+* Transformacion del CSS a SCSS.
+
+* Se utilizaron partials para mejor organizacion.
+
+* Nuevos partials de Vars(variables), keyframes(para animaciones), etc.
+
+* Se agrego en todas las paginas MetaTag descriptions.
+
+* Ahora con SASS se utilizan : Nesting, Mixins, Extends, operadores(if, if else) y variables.
+
+* Se agrego animacion en [Sucursales](./pages/sucursales.html), para la aparicion de las fotos.
+
+* Se agrego animacion en [Menu](./pages/menu.html), para el hover de los botones (+) y (-).
+
+* Se agrego animacion en [Contacto](./pages/contacto.html) para cuando aparecen las redes.
+
+* Los links a redes utilizan target blank.
+
+* Correcion de scroll lateral en [Pagina del Index](./index.html) y [Sucursales](./pages/sucursales.html).
+
+* Ahora el [Menu](./pages/menu.html) esta hecho con grids y las imagenes fueron reemplazadas y con un resize.
+
+* Se Completaron los alts vacios de las imagenes y se agrego un favicon.
+
+
+
+
+
+Ahora todas las paginas son Responsive: 
     
 [Pagina del Index](./index.html).
+
+[Pagina del Menu](./pages/menu.html).
 
 [Pagina de las Sucursales](./pages/sucursales.html).
 
@@ -12,9 +43,9 @@ Por ahora estas son las paginas responsive:
 
 [Pagina de Contacto](./pages/contacto.html).
 
-Falta que sea responsive menu.html
 
-## Cambios y cosas agregadas en esta entrega
+
+## Cambios Realizados en la 2daPre-Entrega (El contenido de esta entrega esta en otra rama)
 
 * Se agrego bootstrap en todas las paginas.
 
