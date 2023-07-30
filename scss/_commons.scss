@@ -7,6 +7,9 @@ body{
     background-image: url(../img/backgrounds/fondo.jpg);
     background-repeat: no-repeat;
     overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 h2 {
@@ -38,4 +41,3 @@ header img {
       }
     
 }
-

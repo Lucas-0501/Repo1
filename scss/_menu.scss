@@ -53,6 +53,9 @@
     @include flex(row);
     justify-content: center;
     padding: 20px;
+    a{
+        text-decoration: none;
+    }
 }
 .irCarrito{
     color: $black;

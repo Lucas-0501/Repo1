@@ -44,6 +44,7 @@ footer{
     @include flex(row);
     justify-content: space-between;
     align-items: center;
+    margin-top: auto;
     
     svg{
         width: 30px;

@@ -1,0 +1,33 @@
+.headerError{
+    display: flex;
+    justify-content: center;
+    img{
+        width: 600px;
+        height: 600px;
+    }
+}
+.divVolver{
+    @include flex(row);
+    justify-content: center;
+    padding: 20px;
+    a{
+        text-decoration: none;
+    }
+}
+.btnVolver{
+    
+    text-decoration: none;
+    color: $black;
+    text-align: center;
+    background-color: $mainColor;
+    padding: 15px;
+    margin-bottom: 25px;
+    width: 150px;
+    // margin-inline: 46%;
+    border-radius: 10px;
+    &:hover{
+        cursor: pointer;
+        background-color: $black;
+        color: $mainColor;  
+    }
+}
