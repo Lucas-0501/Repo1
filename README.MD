@@ -93,4 +93,4 @@ Sitio en Github pages: https://lucas-0501.github.io/Repo1/index.html
 
 * Ahora el form de [Contacto](./pages/contacto.html) usa bootstrap para mas prolijidad.
 
-* Se corrigieron problemas de ruta en algunos links e imagenes.
+* Se corrigieron problemas de ruta en algunos links e imagenes. 

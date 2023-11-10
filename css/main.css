@@ -10,7 +10,7 @@
     transform: rotateX(0deg);
     transform-origin: top;
   }
-}
+} 
 /* animacion para que los botones del menu se agranden un poco*/
 @keyframes botonAnim {
   0% {
